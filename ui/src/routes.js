@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import RouteWithSubRoutes from './RouteWithSubRoutes';
 
 const Home = lazy(() => import('./components/pages/home/Home'));
-const About = lazy(() => import('./components/pages/home/Home'));
+const HelloWorld = lazy(() => import('./components/pages/home/helloworld'));
 
 const routes = [
   {
@@ -11,8 +11,8 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
-    component: About,
+    path: '/hello',
+    component: HelloWorld,
   },
  
 ];
